@@ -5,7 +5,7 @@ pipeline {
         stage('Preparar entorno') {
             steps {
                 echo "Creando entorno virtual..."
-                bat '"👀RUTA DE PYTHON👀" -m venv venv'
+                bat '"C:\\Users\\icebe\\AppData\\Local\\Programs\\Python\\Python310\\python.exe" -m venv venv'
                 bat 'venv\\Scripts\\activate && pip install -r requirements.txt'
             }
         }
@@ -13,7 +13,7 @@ pipeline {
         stage('Ejecutar script') {
             steps {
                 echo "Ejecutando script principal..."
-                bat 'venv\\Scripts\\activate && python 👀NOMBRE/RUTA DEL ARCHIVO.PY👀'
+                bat 'venv\\Scripts\\activate && python hola.py'
             }
         }
     }
