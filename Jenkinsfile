@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        TERRAFORM_PATH = "C:\\terraform\terraform.exe"  
+        TERRAFORM_PATH = "C:\\terraform/terraform.exe"  
         // Cambia si lo tienes en otro lugar
     }
 
@@ -46,4 +46,5 @@ pipeline {
         }
     }
 }
+
 
